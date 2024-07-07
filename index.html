@@ -64,10 +64,11 @@
                 })
             }).then(response => {
                 console.log("Fetch response received");
-                showThankYouPage();
+                
             }).catch(error => {
                 console.error('Error:', error);
             });
+            showThankYouPage();
         }
 
         function showThankYouPage() {
