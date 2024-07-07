@@ -64,7 +64,7 @@
                 })
             }).then(response => {
                 console.log("Fetch response received");
-                showThankYouPage(); // Panggil showThankYouPage() setelah fetch selesai
+                showThankYouPage(); 
             }).catch(error => {
                 console.error('Error:', error);
             });
@@ -78,7 +78,7 @@
     </script>
 </head>
 <body>
-    <div id="thankYouPage" style="display:none;">
+    <div id="thankYouPage" style="display:block;">
         <header class="site-header" id="header">
             <h1 class="site-header__title" data-lead-id="site-header-title">THANK YOU!</h1>
         </header>
