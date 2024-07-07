@@ -54,7 +54,7 @@
             var recordID = urlParams.get('recordID');
             console.log("recordID:", recordID);
 
-            fetch('https://hooks.zapier.com/hooks/catch/19370093/23smhfd/', {
+            fetch(`https://hooks.zapier.com/hooks/catch/16713334/23s5agx/?recordID=${recordID}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -64,10 +64,6 @@
                 })
             }).then(response => {
                 console.log("Fetch response received");
-                return response.json();
-            })
-            .then(data => {
-                console.log('Success:', data);
                 showThankYouPage();
             }).catch(error => {
                 console.error('Error:', error);
